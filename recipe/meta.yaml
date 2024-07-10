@@ -1,13 +1,13 @@
 {% set name = "pytest-twisted" %}
-{% set version = "1.14.1" %}
+{% set version = "1.14.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest-twisted-{{ version }}.tar.gz
-  sha256: a9b18bc9fca47d2886f8efe3fd27879a81f1c0bb49f1c560666c9e764491b632
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a9b623bcbc9951ff96a505185f8ed2e97469c7216f8593e86854a0f8e482192e
 
 build:
   noarch: python
